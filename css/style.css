@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+.header {
+  position: relative;
+  background-image: url(../images/nat.jpg);
+  width: 100%;
+  height: 60vh;
+  clip-path: polygon(0 0, 100% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.header:before {
+  content: "";
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.3;
+}
+
+.navbar:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.205);
+  z-index: -1;
+}
+
+.nav-item a:hover {
+  cursor: crosshair;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+.header-buttons a{
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 10px 50px;
+    padding: 10px;
+    outline: none;
+    color: wheat;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.4rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.header-buttons a:hover {
+
+    background: rgba(201, 198, 115, 1);
+    text-decoration: none;
+}
+
+.header-section{
+    padding: 50px;
+}
+
+
+.second-header {
+  width: 100%;
+  height: auto;
+
+  margin: 100px 0;
+  text-align: center;
+}
+
+.extra-div {
+  background-color: aliceblue;
+  border: medium none;
+  padding: 50px !important;
+  border-radius: 5px;
+  /* transition: 0.3; */
+}
+
+.extra-div h2 {
+  font: 1rem;
+  line-height: 1.1;
+  word-spacing: 4px;
+  font-weight: bold;
+  margin: 20px 0 15px;
+}
+
+.extra-div:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 0 20px lightblue;
+}
+
+
+.pricing{
+  width: 100%;
+  height: 100vh;
+  padding:50px;
+  position: relative;
+}
+
+.money{
+  font-size: 40px;
+
+}
+
+.card-body-li {
+
+  list-style: none;
+  margin: 10px 0;
+  font-weight: 400;
+  font-size: 15px;
+
+}
+
+.card{
+  transition: 0.4s ease;
+
+}
+
+.card-footer{
+  background-color: aliceblue !important;
+padding: 50px  0  !important;
+}
+
+.card-footer a{
+border: 1px solid white;
+  border-radius: 100px;
+  margin: 10px 50px;
+  padding: 10px;
+  outline: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+  text-align: center;
+}
+
+.card-footer a:hover{
+
+  color: rgb(5, 255, 255);
+  text-decoration: none;
+  background-color: rgb(148, 201, 255);
+  box-shadow: 0 0 20px 0 rgb(148, 201, 255);
+
+}
+
+.card:hover{
+  transform:translateY(-20px);
+   box-shadow: 0 0 20px 0 rgb(148, 201, 255);
+}
+
+ .card:hover .card-header,.card:hover .money {
+color:  rgb(148, 201, 255) ;
+
+}
+
+::placeholder{
+  -webkit-text-fill-color: rgb(2, 255, 65);
+  font-size: 0.7em;
+}
+
+.contactus{
+  width: 100%;
+
+
+  padding: 20px 0;
+  position: relative;
+
+}
+
+.contactus:before{
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+z-index: -1;
+  background: linear-gradient(30deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+form:hover {
+  box-shadow: 0 0 20px 0 rgb(148, 201, 255);
+
+}
+
+.offers{
+  box-shadow: 0 0 20px 0 rgb(148, 201, 255);
+  padding: 50px;
+
+}
+.headings{
+  margin-bottom: 50px;
+
+}
+.headings h2{
+
+
+}
+
+.names h2{
+  color: aqua;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.servicediv h2{
+  font-size: 1.5em;
+
+}
+
+.service-icons{
+  align-items: center;
+  justify-content: center;
+  display:flex;
+}
+i{
+  color:aqua;
+}
+
+
+
+/* footer   section */
+
+.footersection{
+  width: 100%;
+  height: auto;
+  padding: 70px 0;
+  position:relative;
+   background-color: rgb(119, 0, 255);
+
+}
+
+.footersection p{
+  color: aliceblue;
+}
+.footersection li{
+ list-style-type: none;
+}
+
+.footersection li a{
+
+  color:#fff
+  ;
+  font-size: 0.9em;
+  line-height: 1;
+  font-weight: bold;
+
+}
+
+.footersection h3{
+  color:#fff;
+  font-size: 1.2em;
+}
+
+.social-link{
+  margin-top:10px;
+
+}
+
+.social-link a:hover{
+  text-decoration: none;
+
+}
+
+.social-link a i:hover{
+  color: #fff;
+}
+
+.social-link .fa-facebook{
+  color: skyblue;
+}
+
+.social-link .fa-youtube{
+  color: red;
+}
+
+.social-link .fa-twitter{
+  color:lightblue
+}
